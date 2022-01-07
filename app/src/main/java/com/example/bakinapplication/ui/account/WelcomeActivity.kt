@@ -17,23 +17,12 @@ class WelcomeActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_welcome)
 
         binding.welcomeLogInButton.setOnClickListener {
-            login()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
         binding.welcomeSignUpButton.setOnClickListener {
-            signUp()
-        }
-        binding.welcomeFindPasswordButton.setOnClickListener {
-            findPassword()
+            startActivity(Intent(this, SignUpActivity1::class.java))
         }
     }
-    private fun login() {
-        startActivity(Intent(this, LoginActivity::class.java))
-    }
-    private fun signUp(){
-        startActivity(Intent(this, SignUpActivity1::class.java))
-    }
-    private fun findPassword(){
-        startActivity(Intent(this, FindPasswordActivity::class.java))
-    }
+
 
 }
