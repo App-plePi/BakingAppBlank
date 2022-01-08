@@ -79,7 +79,7 @@
                 android:layout_marginRight="48dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/background_radius_26_white"
-                android:elevation="5dp"
+                _______________________ (그림자 값 설정)
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/signUpWelcomeText"
@@ -102,7 +102,7 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="#6BBEBEBE"
                     android:fontFamily="@font/robotomedium"
-                    android:hint="nickname"
+                    _______________________ (텍스트 입력칸 보여지는 힌트)
                     android:text="@={viewModel.nickname}"
                     android:inputType="textEmailAddress"
                     android:textColor="#3d3d3d"
@@ -135,7 +135,7 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="#6BBEBEBE"
                     android:fontFamily="@font/robotomedium"
-                    android:hint="01012345678"
+                    _______________________ (텍스트 입력칸 보여지는 힌트)
                     android:text="@={viewModel.phone}"
                     android:inputType="number"
                     android:textColor="#3d3d3d"
@@ -164,7 +164,7 @@
                 android:background="@drawable/background_radius_40_primary"
                 android:elevation="5dp"
                 android:fontFamily="@font/robotobold"
-                android:gravity="center"
+                ________________________ (뷰 내부의 중력, 내부에 들어가는 요소의 위치)
                 android:padding="15dp"
                 android:text="next"
                 android:textColor="@color/white"

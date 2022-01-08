@@ -13,7 +13,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ___________________ {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -22,20 +22,20 @@ class MainActivity : AppCompatActivity() {
     }
     private val adapter = RecipeAdapter()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun ________(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.mainRecipeCreateButton.setOnClickListener {
-            startActivity(Intent(this, RecipeCreateActivity::class.java))
+        binding.mainRecipeCreateButton.__________________ {
+            _____________________________________________________________
         }
         binding.mainRecycler.adapter = adapter
         CoroutineScope(Dispatchers.Main).launch {
             adapter.addItem(viewModel.getList()!!)
         }
-        binding.mainProfileImage.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
+        binding.mainProfileImage.__________________ {
+            ________________________________________________________
         }
     }
 

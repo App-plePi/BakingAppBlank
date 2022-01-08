@@ -66,7 +66,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <EditText
+        <________ (텍스트를 입력하는 곳)
             android:id="@+id/mainSearchEdit"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -94,7 +94,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mainRecycler"
-            android:layout_width="match_parent"
+            ___________________________________ (뷰의 너비)
             android:layout_height="0dp"
             android:layout_marginTop="12dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

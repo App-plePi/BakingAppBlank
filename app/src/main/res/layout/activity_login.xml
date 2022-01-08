@@ -71,7 +71,7 @@
 
             <LinearLayout
                 android:id="@+id/loginBox"
-                android:orientation="vertical"
+                ______________________________ (레이아웃의 자식 뷰들의 정렬 방향)
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
@@ -93,7 +93,7 @@
                     android:textColor="#bebebe"
                     android:fontFamily="@font/robotomedium" />
 
-                <EditText
+                <________ (텍스트를 입력하는 곳)
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
@@ -117,7 +117,7 @@
                     android:textColor="#bebebe"
                     android:fontFamily="@font/robotomedium" />
 
-                <EditText
+                <________ (텍스트를 입력하는 곳)
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
