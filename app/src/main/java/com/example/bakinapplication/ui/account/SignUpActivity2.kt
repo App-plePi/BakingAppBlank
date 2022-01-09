@@ -54,7 +54,7 @@ class SignUpActivity2 : AppCompatActivity() {
         binding.signUp2LoginButton.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
-        binding.loginBackButton.setOnClickListener {
+        binding.signUpBackButton.setOnClickListener {
             finish()
         }
     }
