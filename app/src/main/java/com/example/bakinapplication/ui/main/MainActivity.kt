@@ -3,7 +3,9 @@ package com.example.bakinapplication.ui.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import androidx.lifecycle.ViewModelProvider
 import com.example.bakinapplication.R
 import com.example.bakinapplication.databinding.ActivityMainBinding
@@ -28,14 +30,14 @@ class MainActivity : ___________________ {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.mainRecipeCreateButton.__________________ {
-            _____________________________________________________________
+            startActivity(Intent(this, RecipeCreateActivity::class.java))
         }
         binding.mainRecycler.adapter = adapter
         CoroutineScope(Dispatchers.Main).launch {
             adapter.addItem(viewModel.getList()!!)
         }
         binding.mainProfileImage.__________________ {
-            ________________________________________________________
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
 

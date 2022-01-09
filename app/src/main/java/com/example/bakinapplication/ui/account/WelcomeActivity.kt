@@ -17,10 +17,10 @@ class WelcomeActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_welcome)
 
         binding.welcomeLogInButton.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            ____________________________________________________
         }
         binding.welcomeSignUpButton.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity1::class.java))
+            ________________________________________________________
         }
     }
 
