@@ -32,10 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.mainRecipeCreateButton.__________________ {
             _____________________________________________________________
         }
-        binding.mainRecycler.adapter = adapter
-        CoroutineScope(Dispatchers.Main).launch {
-            adapter.addItem(viewModel.getList()!!)
-        }
+
         binding.mainProfileImage.__________________ {
             ________________________________________________________
         }
@@ -43,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        binding.mainRecycler.adapter = adapter
         adapter.removeAll()
         CoroutineScope(Dispatchers.Main).launch {
             adapter.addItem(viewModel.getList()!!)
