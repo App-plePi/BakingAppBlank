@@ -117,7 +117,7 @@
                     android:fontFamily="@font/notosanskrb"
                     android:includeFontPadding="false"
                     android:text="@{viewModel.nicknameWarning}"
-                    <!-- text의 사이즈를 정하는 속성 값 : B95151-->
+                    <!-- text의 색상을 정하는 속성 값 : #B95151-->
                     android:textSize="12sp" />
 
                 <TextView
