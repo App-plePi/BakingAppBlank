@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.mainRecipeCreateButton.__________________ {
-            _____________________________________________________________
+        binding.mainRecipeCreateButton.__________________ { //클릭 이벤트를 실행하는 코드
+            _____________________________________________________________//RecipeCreateActivity로 화면을 전환하는 코드
         }
 
-        binding.mainProfileImage.__________________ {
-            ________________________________________________________
+        binding.mainProfileImage.__________________ {//클릭 이벤트를 실행하는 코드
+            ________________________________________________________//ProfileActivity로 화면을 전환하는 코드
         }
     }
 
