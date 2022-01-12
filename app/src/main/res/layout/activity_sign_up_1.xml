@@ -49,7 +49,7 @@
 
             <TextView
                 android:id="@+id/signUpTitle"
-                android:layout_width="wrap_content"
+                <!-- view의 사이즈를 정하는 속성 값 : 자식의 크기만큼-->
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
                 android:fontFamily="@font/robotomedium"
@@ -103,7 +103,7 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="#6BBEBEBE"
                     android:fontFamily="@font/robotomedium"
-                    _______________________ (텍스트 입력칸 보여지는 힌트)
+                    <!--텍스트 입력칸 보여지는 힌트 값: nickname-->
                     android:text="@={viewModel.nickname}"
                     android:inputType="textEmailAddress"
                     android:textColor="#3d3d3d"
@@ -117,7 +117,7 @@
                     android:fontFamily="@font/notosanskrb"
                     android:includeFontPadding="false"
                     android:text="@{viewModel.nicknameWarning}"
-                    android:textColor="#B95151"
+                    <!-- text의 사이즈를 정하는 속성 값 : B95151-->
                     android:textSize="12sp" />
 
                 <TextView
@@ -136,7 +136,7 @@
                     android:layout_marginRight="20dp"
                     android:backgroundTint="#6BBEBEBE"
                     android:fontFamily="@font/robotomedium"
-                    _______________________ (텍스트 입력칸 보여지는 힌트)
+                    <!--텍스트 입력칸 보여지는 힌트 값 : phone number-->
                     android:text="@={viewModel.phone}"
                     android:inputType="number"
                     android:textColor="#3d3d3d"
@@ -165,7 +165,7 @@
                 android:background="@drawable/background_radius_40_primary"
                 android:elevation="5dp"
                 android:fontFamily="@font/robotobold"
-                ________________________ (뷰 내부의 중력, 내부에 들어가는 요소의 위치)
+                 <!--뷰 내부의 중력, 내부에 들어가는 요소의 위치 값: gravity-->
                 android:padding="15dp"
                 android:text="next"
                 android:textColor="@color/white"
