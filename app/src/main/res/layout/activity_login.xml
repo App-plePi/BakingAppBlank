@@ -73,7 +73,7 @@
 
             <LinearLayout
                 android:id="@+id/loginBox"
-                ______________________________ (레이아웃의 자식 뷰들의 정렬 방향)
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
@@ -176,7 +176,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

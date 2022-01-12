@@ -80,7 +80,7 @@
                 android:layout_marginRight="48dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/background_radius_26_white"
-                _______________________ (그림자 값 설정)
+                android:elevation="5dp"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/signUpWelcomeText"
